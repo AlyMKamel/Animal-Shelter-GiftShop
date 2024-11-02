@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FCDAEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalapp.helpPage">
+   <children>
+      <Label layoutX="223.0" layoutY="27.0" text="Help &amp; Instructions">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="280.0" layoutY="345.0" mnemonicParsing="false" onAction="#backFX" text="Back" />
+      <Text layoutX="175.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to our Animal Adoption App !" />
+      <Text layoutX="165.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are a few steps to adopt your animal:" />
+      <Text layoutX="22.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You need to fill Add Animals form and we review it and will follow the constructionss to get to your order" />
+      <Text layoutX="213.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank You For Visiting Our App..." />
+
+      <ImageView fitHeight="138.0" fitWidth="123.0" layoutX="239.0" layoutY="165.0">
+         <image>
+            <Image url="@pet.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane style="-fx-background-color: #fef5fb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalapp.HomeController">
+
+    <VBox alignment="CENTER" prefHeight="324.0" prefWidth="751.0" spacing="20" style="-fx-padding: 20;">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+        <!-- Title Label with Border -->
+        <Label prefHeight="68.0" prefWidth="324.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #000000; -fx-border-color: #fface3; -fx-border-width: 2; -fx-background-color: rgba(255, 255, 255, 0.8); -fx-padding: 10px;" text="Animal Adoption Shelter" />
+        <!-- Description Label with Border -->
+        <Label style="-fx-font-size: 16px; -fx-text-fill: #000000; -fx-border-color: #fface3; -fx-border-width: 2; -fx-background-color: rgba(255, 255, 255, 0.8); -fx-padding: 10px;" text="Find your perfect companion today!" />
+        <!-- Logo with Border -->
+        <ImageView fx:id="logo" fitHeight="170.0" fitWidth="200" preserveRatio="true" style="-fx-border-color: #fface3; -fx-border-width: 2; -fx-background-color: rgba(255, 255, 255, 0.8); -fx-padding: 10px;" />
+
+        <!-- Buttons -->
+        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="691.0" spacing="20">
+         <Button fx:id="addAnimal" onAction="#handleAddClick" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Add Pet" />
+            <Button fx:id="Adopt" onAction="#handleAdoptClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Adopt a Pet" />
+            <Button fx:id="GiveUp" onAction="#handleGiveUpClick" prefHeight="42.0" prefWidth="97.0" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Give Up" />
+            <Button fx:id="Contact" onAction="#handleContactClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Contact" />
+            <Button fx:id="About" onAction="#handleAboutClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="About" />
+            <Button fx:id="Donate" onAction="#handleDonateClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Donate" />
+         <Button fx:id="volu1" layoutX="632.0" layoutY="11.0" onAction="#handleVoluKlik" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="volunteer" />
+         <Button fx:id="feedb" onAction="#handleFeedbacKlik" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="feedback" />
+            <Button fx:id="Home" onAction="#handleHomeClick" prefHeight="42.0" prefWidth="95.0" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Add Pet" />
+
+        </HBox>
+    </VBox>
+</StackPane>

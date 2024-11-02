@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FCDAEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalapp.ViewReq">
+   <children>
+      <Text layoutX="264.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="327.0" layoutY="352.0" mnemonicParsing="false" onAction="#backFX" text="Back" />
+      <Text layoutX="200.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Animal is Added Successfully !" />
+      <Text layoutX="248.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Donation">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="26.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="23.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile:" />
+      <Text layoutX="28.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Text layoutX="15.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit No.:" />
+      <Text layoutX="248.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exp. Date:" />
+      <Text layoutX="409.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV:" />
+      <TextField fx:id="nameeID" layoutX="82.0" layoutY="63.0" />
+      <TextField fx:id="mobID" layoutX="83.0" layoutY="101.0" />
+      <TextField fx:id="emailID" layoutX="83.0" layoutY="136.0" />
+      <TextField fx:id="creditID" layoutX="82.0" layoutY="167.0" />
+      <TextField fx:id="expID" layoutX="315.0" layoutY="166.0" prefHeight="26.0" prefWidth="79.0" />
+      <TextField fx:id="cvvID" layoutX="446.0" layoutY="166.0" prefHeight="26.0" prefWidth="79.0" />
+
+      <Button layoutX="205.0" layoutY="352.0" mnemonicParsing="false" onAction="#DonateFX" text="Donate" />
+      <Label fx:id="msgLabel" layoutX="212.0" layoutY="329.0" prefHeight="18.0" prefWidth="187.0" />
+      <ImageView fitHeight="118.0" fitWidth="126.0" layoutX="231.0" layoutY="211.0">
+         <image>
+            <Image url="@pet2.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="272.0" layoutY="352.0" mnemonicParsing="false" onAction="#ClearFX" text="Clear" />
+      <Button layoutX="534.0" layoutY="13.0" mnemonicParsing="false" onAction="#HomeFX" text="Home" />
+   </children>
+</AnchorPane>

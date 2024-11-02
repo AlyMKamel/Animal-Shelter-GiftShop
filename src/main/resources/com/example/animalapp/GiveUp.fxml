@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="685.0" style="-fx-background-color: FDE5EC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalapp.GiveUpController">
+    <children>
+        <Pane prefHeight="87.0" prefWidth="686.0" style="-fx-background-color: FFCACA;">
+            <children>
+                <ImageView fitHeight="46.0" fitWidth="80.0" layoutX="297.0" layoutY="21.0">
+                    <image>
+                        <Image url="@share.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@burger-bar.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label layoutX="49.0" layoutY="162.0" prefHeight="35.0" prefWidth="334.0" text="specify animal and it's breed*">
+            <font>
+                <Font name="Geeza Pro Bold" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="151.0" layoutY="552.0" opacity="0.58" prefHeight="32.0" prefWidth="66.0" text="city">
+            <font>
+                <Font name="Geeza Pro Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="362.0" layoutY="552.0" opacity="0.58" prefHeight="32.0" prefWidth="107.0" text="zip code">
+            <font>
+                <Font name="Geeza Pro Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="599.0" prefHeight="32.0" prefWidth="90.0" text="E-mail*">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="61.0" layoutY="642.0" prefHeight="32.0" prefWidth="164.0" text="Phone Number*">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="submit" layoutX="157.0" layoutY="705.0" mnemonicParsing="false" onAction="#handleSubmit" text="SUBMIT">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="397.0" layoutY="705.0" mnemonicParsing="false" onAction="#handleDelete" text="DELETE">
+            <font>
+                <Font size="17.0" />
+            </font>
+
+        </Button>
+        <Label layoutX="104.0" layoutY="95.0" prefHeight="62.0" prefWidth="494.0" text="GIVE UP FOR ADOPTION">
+            <font>
+                <Font name="Geeza Pro Bold" size="40.0" />
+            </font>
+        </Label>
+        <Label layoutX="62.0" layoutY="196.0" prefHeight="32.0" prefWidth="168.0" text="The pet's name">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="73.0" layoutY="236.0" prefHeight="32.0" prefWidth="107.0" text="Pet's age*">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="46.0" layoutY="283.0" prefHeight="32.0" prefWidth="177.0" text="Medical history *">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="medicalhistory" layoutX="240.0" layoutY="278.0" prefHeight="27.0" prefWidth="314.0" />
+        <DatePicker fx:id="age" layoutX="213.0" layoutY="238.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="322.0" prefHeight="47.0" prefWidth="416.0" text="would you like to drop the animal or " textAlignment="CENTER">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="353.0" prefHeight="47.0" prefWidth="607.0" text="would you like someone picking it up from your property?*" textAlignment="CENTER">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="drop" layoutX="433.0" layoutY="405.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="94.0" text="Drop">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="pickup" layoutX="433.0" layoutY="442.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="115.0" text="Pick up">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </RadioButton>
+        <Label layoutX="75.0" layoutY="467.0" prefHeight="32.0" prefWidth="440.0" text="for picking up please provide your address">
+            <font>
+                <Font name="Geeza Pro Bold" size="21.0" />
+            </font>
+
+
+        </Label>
+        <TextField fx:id="breed" layoutX="385.0" layoutY="166.0" prefHeight="26.0" prefWidth="244.0" />
+        <TextField fx:id="name" layoutX="260.0" layoutY="200.0" prefHeight="26.0" prefWidth="267.0" />
+        <TextField fx:id="adress" layoutX="172.0" layoutY="499.0" prefHeight="26.0" prefWidth="340.0" />
+        <TextField fx:id="city" layoutX="150.0" layoutY="533.0" prefHeight="26.0" prefWidth="192.0" />
+        <TextField fx:id="zipcode" layoutX="374.0" layoutY="533.0" prefHeight="26.0" prefWidth="192.0" />
+        <TextField fx:id="email" layoutX="184.0" layoutY="602.0" prefHeight="26.0" prefWidth="340.0" />
+        <TextField fx:id="phonenumber" layoutX="228.0" layoutY="644.0" prefHeight="26.0" prefWidth="267.0" promptText="+20" />
+        <HBox alignment="CENTER" layoutX="0.0" layoutY="738.0" prefHeight="62.0" prefWidth="691.0" spacing="20">
+            <Button fx:id="Home" onAction="#handleHomeClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Home" />
+            <Button fx:id="Contact" onAction="#handleContactClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Contact Us" />
+            <Button fx:id="Adopt" onAction="#handleAdoptClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Adopt a Pet" />
+            <Button fx:id="GiveUp" onAction="#handleGiveUpClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Give Up For Adoption" />
+            <Button fx:id="About" onAction="#handleAboutClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="About Us" />
+            <Button fx:id="Donate" onAction="#handleDonateClick" style="-fx-background-color: #fface3; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-color: #000000; -fx-border-width: 1; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2);" text="Donate" />
+
+        </HBox>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FCDAEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.animalapp.voulnteer">
+   <children>
+      <Button layoutX="190.0" layoutY="257.0" mnemonicParsing="false" onAction="#submitForm" prefHeight="32.0" prefWidth="62.0" text="Submit" />
+      <Button layoutX="269.0" layoutY="257.0" mnemonicParsing="false" onAction="#resetForm" prefHeight="32.0" prefWidth="53.0" text="Reset" />
+      <TextField fx:id="emailTextField" layoutX="148.0" layoutY="103.0" prefHeight="25.0" prefWidth="204.0" promptText="Email" />
+      <TextField fx:id="firstNameTextField" layoutX="148.0" layoutY="140.0" prefHeight="25.0" prefWidth="204.0" promptText="First name" />
+      <TextField fx:id="lastNameTextField" layoutX="148.0" layoutY="175.0" prefHeight="25.0" prefWidth="204.0" promptText="Last name" />
+      <TextField fx:id="phoneNumberTextField" layoutX="148.0" layoutY="211.0" prefHeight="25.0" prefWidth="204.0" promptText="Phone number" />
+      <Text layoutX="21.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill out your information here">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
